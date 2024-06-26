@@ -1,5 +1,5 @@
 $ProgressPreference = 'SilentlyContinue'
-$apacheUrl = 'https://home.apache.org/~steffenal/VC15/binaries/httpd-2.4.54-win32-VC15.zip'
+$apacheUrl = 'https://home.apache.org/~steffenal/VC15/binaries/httpd-2.4.54-win64-VC15.zip'
 $installDir = 'C:\Apache24'
 Invoke-WebRequest -Uri $apacheUrl -OutFile 'C:\apache.zip'
 Expand-Archive -Path 'C:\apache.zip' -DestinationPath 'C:\apache'
